@@ -1,0 +1,74 @@
+body{
+    background-color: black;
+    background-image: url("img/nes.png");
+    background-size: 1900px 950px;
+    background-repeat: no-repeat;
+    ba
+
+}
+img {    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+
+
+#score {
+    text-align: center;
+    color: red;
+}
+#game {
+    width: 1300px;
+    height: 800px;
+    border: 2px solid black;
+    margin: auto;
+    background:  url("img/back.jpg") repeat-x;
+    overflow: hidden;
+    background-size: cover;
+    animation: marioworld 6s linear infinite;
+
+}
+#mario{
+    height: 175px;
+    width: 175px;
+    position: relative;
+    top: 580px;
+    background-image: url("img/wario.gif");
+    background-size: cover;
+    transform: scaleX(-1);
+    
+}
+#goomba{
+    height: 155px;
+    width: 155px;
+    position: relative;
+    top: 425px;
+    left: 1300px;
+    background-image: url("img/goomba.gif");
+    background-size: cover;
+    animation: goomba 5s infinite;
+    
+}
+@keyframes goomba {
+    0%{left: 1250px;}
+    100%{left: -350px;}
+}
+.jump{
+    animation: jump 0.5s;
+}
+@keyframes jump {
+    0%{top: 450px;}
+    50%{top: 90px;}
+    75%{top: 90px;}
+    100%{top: 720;}
+
+}
+@keyframes marioworld {
+    from{
+        background-position: 3000px;
+    }
+    to{background-position: -1300px;
+    }
+     }
